@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados - Curso JavaScript #06</title>
+    <style>
+        body{background-color: aqua;}
+    </style>
+</head>
+<body>
+    <h1>ex004</h1>
+    <h1>Olá, Mundo!</h1>
+    <p>já me livrei da maldição</p>
+
+    <script>
+        var nome = window.prompt('Qual seu nome:')
+        //Formatando strings
+        //TOMA CUIDADO COM AS FUNÇOES QUE TEM () E AS QUE NÃO TEM 
+        document.writeln(`Olá ${nome} Seu nome tem  ${nome.length} letras <br>`) 
+        document.writeln(`Seu nome em maiúsculas ${nome.toUpperCase()} <br>` )
+        document.writeln(`Seu nome em minúsculas ${nome.toLowerCase()}  <br>` )
+
+
+        //Formatando números
+        n1=1563.6458
+        document.write(`${n1.toFixed(2).replace('.',',')} <br>`)
+      
+        document.write(n1.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}))
+        document.write('<br>')
+        document.write(n1.toLocaleString('pt-BR',{style:'currency',currency:'USD'}))
+        document.write('<br>')
+        document.write(n1.toLocaleString('pt-BR',{style:'currency',currency:'EUR'}))
+    </script>
+</body>
+</html>

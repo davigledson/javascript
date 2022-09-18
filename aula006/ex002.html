@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados - Curso JavaScript #06</title>
+</head>
+<style>
+    body{font: normal 25pt Arial;}
+</style>
+<body>
+    <h1>ex002</h1>
+    <h1>Olá, Mundo!</h1>
+    <p>já me livrei da maldição</p>
+
+    <script>
+        
+        var nome = window.prompt('Qual seu nome?')
+        window.alert("é um grande prazer te conhecer "+ nome +'!')  //concatenação
+
+        
+       
+       
+        // -> comentários em uma unica linha
+       
+        /* -> comentários em
+        mais de uma linha*/
+        /* '=' significa recebe
+        '==' significa igual
+        */
+   
+        // AULA 6
+
+       // 1ª OPÇÃO ONDE SEM CONVERTER AS VARIAVEIS OS VALORES APENAS IRÃO CONCATENAR
+
+     /*    
+       var n1 = window.prompt('Digite um número:') // String
+       var n2 = window.prompt('Digite outro número') // String
+       var s = n1+ n2
+       window.alert('A soma dos valores é' + s) // Lembrar que o + é concatenação
+       // (number + number) para adição
+       // (string + string) para concatenação
+     */
+     
+      // 2ª OPÇÃO CONVERTENTENDO PARA NÚMERO INTEIRO "Number.parseInt(n)"
+
+     /*
+       var n1 = Number.parseInt(window.prompt('Digite um número:')) // String
+       var n2 = Number.parseInt(window.prompt('Digite outro número')) // String
+       var s = n1+ n2
+       window.alert('A soma dos valores é: ' + s) // Lembrar que o + é concatenação
+       // (number + number) para adição
+       // (string + string) para concatenação
+     */
+
+       
+       // 3ª OPÇÃO CONVERTENTENDO PARA NÚMERO FRACIONADO "Number.parseFloat(n)"
+     
+     /*     
+       var n1 = Number.parseFloat(window.prompt('Digite um número:')) // String
+       var n2 = Number.parseFloat(window.prompt('Digite outro número')) // String
+       var s = n1+ n2
+       window.alert('A soma dos valores é: ' + s) // Lembrar que o + é concatenação
+       // (number + number) para adição
+       // (string + string) para concatenação     
+     */
+
+      // 4ª OPÇÃO DEIXANDO O JS IDENTIFICAR O NÚMERO SOZINHO "Number(n)"
+     
+     /*    
+       var n1 = Number(window.prompt('Digite um número:')) // String
+       var n2 = Number(window.prompt('Digite outro número')) // String
+       var s = n1+ n2
+       window.alert('A soma dos valores é: ' + s) // Lembrar que o + é concatenação
+       // (number + number) para adição
+       // (string + string) para concatenação     
+     */ 
+
+       // CONVERTENDO NÚMERO PARA String
+       // String(n) >> window.alert('A soma dos valores é: ' + s.toString())
+       // n.toString() >> window.alert('A soma dos valores é: ' + String(s))
+
+     // 5ª OPÇÃO template string 
+          
+       //var n1 = Number(window.prompt('Digite um número:')) // String
+      // var n2 = Number(window.prompt('Digite outro número')) // String
+      // var s = n1+ n2
+       //window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Lembrar que o + é concatenação
+    </script>
+</body>
+</html>
