@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM - Curso JavaScript #09</title>
+    <!--NESSA AULA BAIXEI O LIVE SERVER E O NODE EXEC-->
+    <style>
+        body{background-color: blue;color: white;
+        font: normal 20pt Arial;}
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg" >Clique em mim</div>
+</body>
+</html>
+<script>
+    /*DOM - Document Object Model - modelo de documento par objetos - lembrar da arvore DOM
+    
+    SELECIONANDO
+    por marca = .getElementsByTagName()
+    por ID = .getElementById()
+    por Nome = .getElementsByName()
+    por Classe = .getElementsByClassName()
+    por Seletor = .querySelector() ou .querySelectorAll()
+    */
+    
+    
+   // window.document.writeln(window.document.charset)
+    //window.document.write(window.navigator.appName)
+    //window.document.writeln(window.document.URL)
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[1]
+    window.document.write('Estar escrito assim: ' + p1.innerText)
+    /*innerText = não vem com a formatação do HTML
+     innerHTML = vem com a formatação do HTML   
+    */
+    window.document.write('Estar escrito assim:' + p1.innerHTML)
+    p1.style.color ='green'
+    corpo.style.backgroundColor = 'black'
+
+
+    //var d = window.document.getElementById('msg')
+   // d.style.backgroundColor ='green'
+    //d.innerText= 'Estou Modificado...'
+    
+    //window.document.getElementById('msg').innerText = 'Estou modificado mais uma vez'
+    /*escrito em um só comando*/
+    var e = window.document.querySelector('div#msg')
+    e.style.background ='blue'
+
+    
+</script>
