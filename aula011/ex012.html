@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições (Parte 1) - Curso JavaScript #11</title>
+</head>
+<body>
+    <h1>Sistema de multas!</h1>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="resultado">resultado</div>
+    
+    
+    <script>
+    
+        function calcular(){
+        var txtv=document.getElementById('txtvel')
+        var res=document.getElementById('resultado')
+        var vel=Number(txtv.value)
+            res.innerHTML = `Sua velocidade atual e de <strong>${vel}</strong> km/h`
+            if (vel>60){
+                res.innerHTML += `<p>você esta <strong>MULTADO!</strong>  por excesso de velocidade</p>`
+            }
+            res.innerHTML += `<p>Digira sempre com cinto de segurança</p>`
+        
+        }
+    </script>
+</body>
+</html>
