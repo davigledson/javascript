@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM - Curso JavaScript #10</title>
+    <style>
+        body{font: 25pt Arial;
+       
+        }
+        #area{ 
+            background-color: greenyellow;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+        interaja...
+    </div>
+    
+        <script>
+            /*
+            Como descobrir erros no javaScript
+            
+            -abre o devtool no navegador e olhes os 'X' vermelho no canto superior direito
+            
+            */
+        var a = window.document.getElementById('area')
+            a.addEventListener('click',clicar)
+            a.addEventListener('mouseenter',entra)
+            a.addEventListener('mouseout',saiu)
+
+            function clicar(){
+                
+                a.innerText ='Clicou!'
+                a.style.background ='red'
+            }
+
+            function entra() {
+              
+                a.innerText ='Entrou!'
+                a.style.background ='greenyellow'
+            }
+            function saiu(){
+                a.innerText ='Saiu!'
+                a.style.background =' green'
+            }
+        </script>
+</body>
+</html>
