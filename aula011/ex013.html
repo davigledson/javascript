@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício - Brasileiro/Estrangeiro</title>
+    <style>
+        body{background-color: black;color: white;}
+        input{width: 300px;padding: 10px;border-radius: 10px;}
+        div{font-size: 40px;}
+    </style>
+</head>
+<body>
+    <h1>Exercício Brasileiro/Eua</h1>
+    <input type="text" id="nas" placeholder="Digite o pais que você nasceu aqui" >
+    <input type="button" value="Enviar" onclick="nacionalidade()">
+    <div id="res">resultado</div>
+</body>
+</html>
+<script>
+    var nas = document.getElementById('nas')
+    var res = document.getElementById('res')
+    function nacionalidade(){
+        if(nas.value =='Brasil'){
+        res.innerHTML ='Brasileiro'
+
+    }
+    else{res.innerHTML ='Estrangeiro'}
+    }
+    
+</script>
