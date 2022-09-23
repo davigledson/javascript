@@ -5,7 +5,7 @@ var c = 1
 console.log(` ----- while ----- `)
 while (c<=5){
     console.log(`${c}° Tudo bem!`)
-    c+=1
+    c+=1 //ou c++
 }
 
 console.log(` ----- do while ----- `)
@@ -13,5 +13,5 @@ console.log(` ----- do while ----- `)
 var d =1
 do{
     console.log(`${d}° Olá`)
-    d+=1
+    d+=1  //ou d++
 } while(d<=5)
