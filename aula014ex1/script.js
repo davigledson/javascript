@@ -5,7 +5,7 @@ function contar(){
 var fim = document.getElementById('fim')
 var passo = document.getElementById('passo')
 var res = document.getElementById("res")
- //NÃO EXECUTE O res.inner sem ter uma função arquitetada SENÂO SÓ VAI DAR DORE DE CABEÇA
+ //NÃO EXECUTE O res.inner sem ter uma função arquitetada SENÂO SÓ VAI DAR DOR DE CABEÇA
 
 if(inicio.value.length ==0 || fim.value.length ==0 || passo.value.length ==0) {
     res.innerHTML ='Impossível contar!'

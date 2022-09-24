@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{
+background-color:  lightblue;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+}
+header{
+text-align: center;
+}
+
+section{
+background-color: white;
+padding: 10px;
+border-radius: 10px;
+margin: auto;
+width: 500px;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.452)
+}
+
+footer{
+text-align: center;
+font-style: italic;
+}
+#res{display: inline-block;} /*Quebra de linha de div*/
+#resselect{
+    display: inline-block;
+    
+    
+}
