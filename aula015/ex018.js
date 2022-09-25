@@ -2,7 +2,7 @@
 let num =[1,3,4,2] 
 num [4] = 5
 num.push(6) //método interno para adicionar um numero em um array/vetor - colocar no final
-num.length //atributo - serve para contar os elementos mum array
+num.length //atributo - serve para contar os elementos em um array
 
 console.log(`nosso vetor é ${num}`)
 num.sort() //colocar os elementos em ordem crescente
