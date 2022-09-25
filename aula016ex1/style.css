@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body{
-background-color:  black;color: white;
+background-color:  lightskyblue;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 20px;
 }
@@ -9,7 +9,7 @@ text-align: center;
 }
 
 section{
-background-color: lightslategray;
+background-color: white;
 padding: 10px;
 border-radius: 10px;
 margin: auto;
